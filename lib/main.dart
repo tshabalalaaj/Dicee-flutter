@@ -28,11 +28,11 @@ class DicePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Row(children: <Widget>[
-        Expanded (child: FloatingActionButton(onPressed: () {  },
+        Expanded (child: TextButton(onPressed: () { },
         child: Image.asset('images/dice1.png'),
         )
         ),
-        Expanded (child: FloatingActionButton (onPressed: () {  },
+        Expanded (child: TextButton (onPressed: () {  },
         child: Image.asset('images/dice2.png'),
         )
         ),
