@@ -6,7 +6,13 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: const Text('Dicee'),
+          centerTitle: true,
+          title: const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Dicee', style: TextStyle(color: Colors.white),),
+            ],
+          ),
           backgroundColor: Colors.red,
         ),
         body: const DicePage(),
@@ -20,6 +26,13 @@ class DicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Row(children: <Widget>[
+        Expanded (child: Image.asset('images/dice1.png')
+        ),
+        Expanded (child: Image.asset('images/dice2.png')
+        ),
+      ],),
+    );
   }
 }
